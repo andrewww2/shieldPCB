@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -117,6 +117,17 @@
 <wire x1="-1.27" y1="-31.75" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 <text x="7.62" y="-21.59" size="1.27" layer="21" rot="R90">Adafruit MPR121</text>
 </package>
+<package name="E-SWITCH_500SSP1S2M2QEA">
+<wire x1="0" y1="0" x2="6.6" y2="0" width="0.127" layer="21"/>
+<wire x1="6.6" y1="0" x2="6.6" y2="-12.85" width="0.127" layer="21"/>
+<wire x1="6.6" y1="-12.85" x2="0" y2="-12.85" width="0.127" layer="21"/>
+<wire x1="0" y1="-12.85" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="COM" x="3.3" y="-6.42" drill="1.85" diameter="3" rot="R180"/>
+<pad name="L1" x="3.3" y="-1.72" drill="1.85" diameter="3" rot="R180"/>
+<pad name="L2" x="3.3" y="-11.12" drill="1.85" diameter="3" rot="R180"/>
+<text x="0" y="1.27" size="1.27" layer="25">Slide_switch</text>
+<text x="8.89" y="-13.97" size="1.27" layer="25" rot="R90">500SSP1S2M2QEA</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BNO055">
@@ -178,6 +189,19 @@
 <wire x1="25.4" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 <text x="13.97" y="-12.7" size="1.778" layer="94" rot="R270">Adafruit MPR121</text>
 <pin name="11" x="0" y="-45.72" length="middle"/>
+</symbol>
+<symbol name="E-SWITCH_500SSP1S2M2QEA">
+<pin name="L1" x="17.272" y="-3.048" length="middle" rot="R180"/>
+<pin name="L2" x="17.272" y="-8.382" length="middle" rot="R180"/>
+<pin name="COM" x="1.524" y="-5.842" length="middle"/>
+<wire x1="8.128" y1="-5.842" x2="9.652" y2="-3.302" width="0.6096" layer="94"/>
+<circle x="7.366" y="-5.842" radius="0.762" width="0.254" layer="94"/>
+<circle x="11.43" y="-3.048" radius="0.762" width="0.254" layer="94"/>
+<circle x="11.43" y="-8.382" radius="0.762" width="0.254" layer="94"/>
+<wire x1="12.446" y1="-3.048" x2="16.002" y2="-3.048" width="0.6096" layer="94"/>
+<wire x1="12.446" y1="-8.382" x2="16.002" y2="-8.382" width="0.6096" layer="94"/>
+<wire x1="2.794" y1="-5.842" x2="6.35" y2="-5.842" width="0.6096" layer="94"/>
+<text x="0" y="-1.524" size="1.27" layer="95">E-SWITCH 500SSP1S2M2QEA</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -254,6 +278,23 @@
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="E-SWITCH_500SSP1S2M2QEA">
+<gates>
+<gate name="G$1" symbol="E-SWITCH_500SSP1S2M2QEA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="E-SWITCH_500SSP1S2M2QEA">
+<connects>
+<connect gate="G$1" pin="COM" pad="COM"/>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="L2" pad="L2"/>
 </connects>
 <technologies>
 <technology name=""/>

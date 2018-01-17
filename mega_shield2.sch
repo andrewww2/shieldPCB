@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1003,41 +1003,6 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <text x="1.73" y="-2.178" size="1.016" layer="21" font="vector">A</text>
 <text x="-2.938" y="-2.178" size="1.016" layer="21" font="vector">K</text>
 </package>
-<package name="EG1218">
-<wire x1="-5.842" y1="2.032" x2="-0.254" y2="2.032" width="0.127" layer="21"/>
-<wire x1="-0.254" y1="2.032" x2="0" y2="1.778" width="0.127" layer="21"/>
-<wire x1="0" y1="1.778" x2="0.254" y2="2.032" width="0.127" layer="21"/>
-<wire x1="0.254" y1="2.032" x2="5.842" y2="2.032" width="0.127" layer="21"/>
-<wire x1="5.842" y1="2.032" x2="5.842" y2="1.524" width="0.127" layer="21"/>
-<wire x1="5.842" y1="1.524" x2="5.334" y2="1.524" width="0.127" layer="21"/>
-<wire x1="5.334" y1="1.524" x2="5.334" y2="-1.524" width="0.127" layer="21"/>
-<wire x1="5.334" y1="-1.524" x2="5.842" y2="-1.524" width="0.127" layer="21"/>
-<wire x1="5.842" y1="-1.524" x2="5.842" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="5.842" y1="-2.032" x2="0.254" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="0.254" y1="-2.032" x2="0" y2="-1.778" width="0.127" layer="21"/>
-<wire x1="0" y1="-1.778" x2="-0.254" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="-0.254" y1="-2.032" x2="-5.842" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="-5.842" y1="-2.032" x2="-5.842" y2="-1.524" width="0.127" layer="21"/>
-<wire x1="-5.842" y1="-1.524" x2="-5.334" y2="-1.524" width="0.127" layer="21"/>
-<wire x1="-5.334" y1="-1.524" x2="-5.334" y2="1.524" width="0.127" layer="21"/>
-<wire x1="-5.334" y1="1.524" x2="-5.842" y2="1.524" width="0.127" layer="21"/>
-<wire x1="-5.842" y1="1.524" x2="-5.842" y2="2.032" width="0.127" layer="21"/>
-<wire x1="-2.286" y1="1.016" x2="2.286" y2="1.016" width="0.127" layer="25"/>
-<wire x1="2.286" y1="1.016" x2="2.286" y2="-1.016" width="0.127" layer="25"/>
-<wire x1="2.286" y1="-1.016" x2="-2.286" y2="-1.016" width="0.127" layer="25"/>
-<wire x1="-2.286" y1="-1.016" x2="-2.286" y2="1.016" width="0.127" layer="25"/>
-<wire x1="-2.032" y1="1.016" x2="-2.032" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="-1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="1.016" x2="-1.524" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.016" x2="-1.27" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-0.508" y1="1.016" x2="-0.508" y2="-1.016" width="0.127" layer="21"/>
-<pad name="P" x="0" y="0" drill="0.9" diameter="1.6764"/>
-<pad name="O" x="-2.54" y="0" drill="0.9" diameter="1.6764"/>
-<pad name="S" x="2.54" y="0" drill="0.9" diameter="1.6764"/>
-<text x="-2.794" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
-</package>
 <package name="1X06">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
@@ -1220,27 +1185,6 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
-</symbol>
-<symbol name="SIS">
-<wire x1="-3.81" y1="1.905" x2="-3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-0.762" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.254" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.905" x2="0.635" y2="3.175" width="0.254" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="3.175" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.762" y1="0" x2="-0.254" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="-0.254" y1="-0.762" x2="0.254" y2="0" width="0.1524" layer="94"/>
-<text x="-6.35" y="-1.905" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="P" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="S" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="O" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
 <symbol name="PINHD6">
 <wire x1="-6.35" y1="-7.62" x2="1.27" y2="-7.62" width="0.4064" layer="94"/>
@@ -1621,26 +1565,6 @@ Source: http://www.osram.convergy.de/</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="EG1218" prefix="S" uservalue="yes">
-<description>&lt;b&gt;SLIDING SWITCH&lt;/b&gt;&lt;p&gt;
-0.1" spacing through hole, vertical SPDT slide switch
-&lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;/p&gt;</description>
-<gates>
-<gate name="1" symbol="SIS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="S" package="EG1218">
-<connects>
-<connect gate="1" pin="O" pad="O"/>
-<connect gate="1" pin="P" pad="P"/>
-<connect gate="1" pin="S" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3584,6 +3508,17 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-1.27" y1="-31.75" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 <text x="7.62" y="-21.59" size="1.27" layer="21" rot="R90">Adafruit MPR121</text>
 </package>
+<package name="E-SWITCH_500SSP1S2M2QEA">
+<wire x1="0" y1="0" x2="6.6" y2="0" width="0.127" layer="21"/>
+<wire x1="6.6" y1="0" x2="6.6" y2="-12.85" width="0.127" layer="21"/>
+<wire x1="6.6" y1="-12.85" x2="0" y2="-12.85" width="0.127" layer="21"/>
+<wire x1="0" y1="-12.85" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="COM" x="3.3" y="-6.42" drill="1.85" diameter="3" rot="R180"/>
+<pad name="L1" x="3.3" y="-1.72" drill="1.85" diameter="3" rot="R180"/>
+<pad name="L2" x="3.3" y="-11.12" drill="1.85" diameter="3" rot="R180"/>
+<text x="0" y="1.27" size="1.27" layer="25">Slide_switch</text>
+<text x="8.89" y="-13.97" size="1.27" layer="25" rot="R90">500SSP1S2M2QEA</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BNO055">
@@ -3630,6 +3565,19 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="25.4" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 <text x="13.97" y="-12.7" size="1.778" layer="94" rot="R270">Adafruit MPR121</text>
 <pin name="11" x="0" y="-45.72" length="middle"/>
+</symbol>
+<symbol name="E-SWITCH_500SSP1S2M2QEA">
+<pin name="L1" x="17.272" y="-3.048" length="middle" rot="R180"/>
+<pin name="L2" x="17.272" y="-8.382" length="middle" rot="R180"/>
+<pin name="COM" x="1.524" y="-5.842" length="middle"/>
+<wire x1="8.128" y1="-5.842" x2="9.652" y2="-3.302" width="0.6096" layer="94"/>
+<circle x="7.366" y="-5.842" radius="0.762" width="0.254" layer="94"/>
+<circle x="11.43" y="-3.048" radius="0.762" width="0.254" layer="94"/>
+<circle x="11.43" y="-8.382" radius="0.762" width="0.254" layer="94"/>
+<wire x1="12.446" y1="-3.048" x2="16.002" y2="-3.048" width="0.6096" layer="94"/>
+<wire x1="12.446" y1="-8.382" x2="16.002" y2="-8.382" width="0.6096" layer="94"/>
+<wire x1="2.794" y1="-5.842" x2="6.35" y2="-5.842" width="0.6096" layer="94"/>
+<text x="0" y="-1.524" size="1.27" layer="95">E-SWITCH 500SSP1S2M2QEA</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3684,6 +3632,23 @@ Source: http://www.osram.convergy.de/</description>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="E-SWITCH_500SSP1S2M2QEA">
+<gates>
+<gate name="G$1" symbol="E-SWITCH_500SSP1S2M2QEA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="E-SWITCH_500SSP1S2M2QEA">
+<connects>
+<connect gate="G$1" pin="COM" pad="COM"/>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="L2" pad="L2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16273,11 +16238,11 @@ general purpose rectifier, 1 A</description>
 <part name="C4" library="rcl" deviceset="C-US" device="025-050X050" value="0.1 uF"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="12V_SWITCH" library="adafruit" deviceset="EG1218" device="S" value="12V_SWITCH"/>
 <part name="JP1" library="adafruit" deviceset="PINHD-1X6" device="" value="MOTOR1_HEADER"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="JP2" library="adafruit" deviceset="PINHD-1X6" device="" value="MOTOR2_HEADER"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="U$2" library="arduinoShield" deviceset="E-SWITCH_500SSP1S2M2QEA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16306,7 +16271,7 @@ general purpose rectifier, 1 A</description>
 <instance part="GND1" gate="1" x="-12.7" y="43.18"/>
 <instance part="IC1" gate="L298" x="-27.94" y="-68.58"/>
 <instance part="IC2" gate="G$1" x="22.86" y="-63.5"/>
-<instance part="12V_SW" gate="1" x="7.62" y="-25.4"/>
+<instance part="12V_SW" gate="1" x="5.08" y="-15.24"/>
 <instance part="C2" gate="G$1" x="7.62" y="-76.2"/>
 <instance part="C1" gate="G$1" x="43.18" y="-76.2"/>
 <instance part="GND4" gate="1" x="25.4" y="-83.82"/>
@@ -16355,19 +16320,17 @@ general purpose rectifier, 1 A</description>
 <instance part="LED5" gate="G$1" x="-81.28" y="55.88" rot="R90"/>
 <instance part="S2" gate="1" x="-157.48" y="43.18"/>
 <instance part="R9" gate="G$1" x="-71.12" y="55.88" rot="R180"/>
-<instance part="12V_IN" gate="G$1" x="17.78" y="-30.48" rot="R90"/>
-<instance part="GND2" gate="1" x="25.4" y="-38.1"/>
+<instance part="12V_IN" gate="G$1" x="15.24" y="-20.32" rot="R90"/>
+<instance part="GND2" gate="1" x="22.86" y="-27.94"/>
 <instance part="U$1" gate="G$1" x="-45.72" y="25.4"/>
 <instance part="C4" gate="G$1" x="-2.54" y="11.43"/>
 <instance part="GND3" gate="1" x="-2.54" y="3.81"/>
 <instance part="GND13" gate="1" x="-50.8" y="22.86"/>
-<instance part="12V_SWITCH" gate="1" x="5.08" y="-40.64" smashed="yes">
-<attribute name="NAME" x="-1.27" y="-42.545" size="1.778" layer="95" rot="R90"/>
-</instance>
 <instance part="JP1" gate="A" x="-30.48" y="-137.16" rot="R180"/>
 <instance part="GND14" gate="1" x="-7.62" y="-142.24"/>
 <instance part="JP2" gate="A" x="48.26" y="-137.16" rot="R180"/>
 <instance part="GND15" gate="1" x="71.12" y="-142.24"/>
+<instance part="U$2" gate="G$1" x="1.778" y="-46.482" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16466,7 +16429,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="12V_IN" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="17.78" y1="-35.56" x2="25.4" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-25.4" x2="22.86" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -16827,10 +16790,10 @@ general purpose rectifier, 1 A</description>
 <junction x="7.62" y="-60.96"/>
 <pinref part="IC1" gate="L298" pin="VS"/>
 <wire x1="-12.7" y1="-53.34" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="7.62" y="-53.34"/>
-<wire x1="7.62" y1="-45.72" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-7.62" y="-50.8" size="1.778" layer="95"/>
-<pinref part="12V_SWITCH" gate="1" pin="P"/>
+<pinref part="U$2" gate="G$1" pin="COM"/>
+<wire x1="7.62" y1="-44.958" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="7.62" y="-53.34"/>
 </segment>
 <segment>
 <pinref part="D4" gate="1" pin="C"/>
@@ -16856,12 +16819,13 @@ general purpose rectifier, 1 A</description>
 <net name="+12V" class="0">
 <segment>
 <pinref part="12V_SW" gate="1" pin="+12V"/>
-<wire x1="7.62" y1="-27.94" x2="7.62" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="12V_IN" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="-35.56" x2="10.16" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="12V_SWITCH" gate="1" pin="S"/>
-<wire x1="10.16" y1="-35.56" x2="15.24" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="10.16" y="-35.56"/>
+<wire x1="5.08" y1="-25.4" x2="12.7" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="L1"/>
+<wire x1="4.826" y1="-29.21" x2="5.08" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-29.21" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="5.08" y="-25.4"/>
 </segment>
 </net>
 <net name="MEGA3" class="0">
