@@ -16587,9 +16587,9 @@ general purpose rectifier, 1 A</description>
 <label x="-137.16" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
-<wire x1="-27.94" y1="-132.08" x2="-17.78" y2="-132.08" width="0.1524" layer="91"/>
-<label x="-17.78" y="-132.08" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="5"/>
+<wire x1="-27.94" y1="-134.62" x2="-17.78" y2="-134.62" width="0.1524" layer="91"/>
+<label x="-17.78" y="-134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LDO_5V" class="2">
@@ -16872,9 +16872,9 @@ general purpose rectifier, 1 A</description>
 <label x="-137.16" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
-<wire x1="-27.94" y1="-134.62" x2="-17.78" y2="-134.62" width="0.1524" layer="91"/>
-<label x="-17.78" y="-134.62" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="6"/>
+<wire x1="-27.94" y1="-132.08" x2="-17.78" y2="-132.08" width="0.1524" layer="91"/>
+<label x="-17.78" y="-132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOT3" class="1">
