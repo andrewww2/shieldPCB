@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16216,7 +16216,7 @@ general purpose rectifier, 1 A</description>
 <part name="D2" library="diode" deviceset="1N4004" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="LED2" library="adafruit" deviceset="LED" device="3MM" value="RED"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="1.8K"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="2.2K"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="D5" library="diode" deviceset="1N4004" device=""/>
 <part name="D8" library="diode" deviceset="1N4004" device=""/>
@@ -16226,12 +16226,12 @@ general purpose rectifier, 1 A</description>
 <part name="D7" library="diode" deviceset="1N4004" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="LED4" library="adafruit" deviceset="LED" device="3MM" value="RED"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="1.8K"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="2.2K"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-US" device="025-050X050" value="0.1 uF"/>
 <part name="LED5" library="adafruit" deviceset="LED" device="3MM" value="STATUS"/>
 <part name="S2" library="switch-omron" deviceset="10-XX" device="" value="Reset"/>
-<part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="390"/>
 <part name="12V_IN" library="adafruit" deviceset="1X2" device="-3.5MM"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="arduinoShield" deviceset="ADA_MPR121" device=""/>
