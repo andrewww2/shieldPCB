@@ -3506,18 +3506,17 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="16.51" y1="1.27" x2="16.51" y2="-31.75" width="0.127" layer="21"/>
 <wire x1="16.51" y1="-31.75" x2="-1.27" y2="-31.75" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-31.75" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
-<text x="7.62" y="-21.59" size="1.27" layer="21" rot="R90">Adafruit MPR121</text>
+<text x="3.81" y="-21.59" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="E-SWITCH_500SSP1S2M2QEA">
-<wire x1="0" y1="0" x2="6.6" y2="0" width="0.127" layer="21"/>
-<wire x1="6.6" y1="0" x2="6.6" y2="-12.85" width="0.127" layer="21"/>
-<wire x1="6.6" y1="-12.85" x2="0" y2="-12.85" width="0.127" layer="21"/>
-<wire x1="0" y1="-12.85" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="COM" x="3.3" y="-6.42" drill="1.85" diameter="3" rot="R180"/>
-<pad name="L1" x="3.3" y="-1.72" drill="1.85" diameter="3" rot="R180"/>
-<pad name="L2" x="3.3" y="-11.12" drill="1.85" diameter="3" rot="R180"/>
-<text x="0" y="1.27" size="1.27" layer="25">Slide_switch</text>
-<text x="8.89" y="-13.97" size="1.27" layer="25" rot="R90">500SSP1S2M2QEA</text>
+<wire x1="-2.54" y1="3.81" x2="4.06" y2="3.81" width="0.127" layer="21"/>
+<wire x1="4.06" y1="3.81" x2="4.06" y2="-9.04" width="0.127" layer="21"/>
+<wire x1="4.06" y1="-9.04" x2="-2.54" y2="-9.04" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-9.04" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
+<pad name="COM" x="0.76" y="-2.61" drill="1.85" diameter="3" rot="R180"/>
+<pad name="L1" x="0.76" y="2.09" drill="1.85" diameter="3" rot="R180"/>
+<pad name="L2" x="0.76" y="-7.31" drill="1.85" diameter="3" rot="R180"/>
+<text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15804,9 +15803,9 @@ http://www.st.com&lt;p&gt;
 <pad name="2" x="-7.62" y="-2.54" drill="1.2" shape="long" rot="R90"/>
 <pad name="1" x="-8.89" y="-7.62" drill="1.2" shape="long" rot="R90"/>
 <text x="-10.5974" y="-10.3383" size="1.27" layer="21">1</text>
-<text x="10.5976" y="-10.2791" size="1.27" layer="21">15</text>
+<text x="9.8356" y="-10.2791" size="1.27" layer="21">15</text>
 <text x="-10.7165" y="-1.27" size="1.27" layer="21">2</text>
-<text x="10.4785" y="-1.27" size="1.27" layer="21">14</text>
+<text x="9.9705" y="-1.27" size="1.27" layer="21">14</text>
 <text x="-8.89" y="-12.7" size="1.27" layer="25">&gt;NAME</text>
 <text x="2.54" y="-12.7" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-9.144" y1="-6.096" x2="-8.636" y2="-3.302" layer="51"/>
@@ -16234,15 +16233,15 @@ general purpose rectifier, 1 A</description>
 <part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="390"/>
 <part name="12V_IN" library="adafruit" deviceset="1X2" device="-3.5MM"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="arduinoShield" deviceset="ADA_MPR121" device=""/>
+<part name="MPR121" library="arduinoShield" deviceset="ADA_MPR121" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="025-050X050" value="0.1 uF"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="JP1" library="adafruit" deviceset="PINHD-1X6" device="" value="MOTOR1_HEADER"/>
+<part name="JP1" library="adafruit" deviceset="PINHD-1X6" device="" value="MOTOR_1"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="JP2" library="adafruit" deviceset="PINHD-1X6" device="" value="MOTOR2_HEADER"/>
+<part name="JP2" library="adafruit" deviceset="PINHD-1X6" device="" value="MOTOR_2"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="U$2" library="arduinoShield" deviceset="E-SWITCH_500SSP1S2M2QEA" device=""/>
+<part name="SLIDE_SW" library="arduinoShield" deviceset="E-SWITCH_500SSP1S2M2QEA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16322,7 +16321,7 @@ general purpose rectifier, 1 A</description>
 <instance part="R9" gate="G$1" x="-71.12" y="55.88" rot="R180"/>
 <instance part="12V_IN" gate="G$1" x="15.24" y="-20.32" rot="R90"/>
 <instance part="GND2" gate="1" x="22.86" y="-27.94"/>
-<instance part="U$1" gate="G$1" x="-45.72" y="25.4"/>
+<instance part="MPR121" gate="G$1" x="-45.72" y="25.4"/>
 <instance part="C4" gate="G$1" x="-2.54" y="11.43"/>
 <instance part="GND3" gate="1" x="-2.54" y="3.81"/>
 <instance part="GND13" gate="1" x="-50.8" y="22.86"/>
@@ -16330,7 +16329,7 @@ general purpose rectifier, 1 A</description>
 <instance part="GND14" gate="1" x="-7.62" y="-142.24"/>
 <instance part="JP2" gate="A" x="48.26" y="-137.16" rot="R180"/>
 <instance part="GND15" gate="1" x="71.12" y="-142.24"/>
-<instance part="U$2" gate="G$1" x="1.778" y="-46.482" rot="R90"/>
+<instance part="SLIDE_SW" gate="G$1" x="1.778" y="-46.482" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16438,12 +16437,12 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="GND2"/>
+<pinref part="MPR121" gate="G$1" pin="GND2"/>
 <wire x1="-15.24" y1="6.35" x2="-2.54" y2="6.35" width="0.1524" layer="91"/>
 <junction x="-2.54" y="6.35"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="MPR121" gate="G$1" pin="GND"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="-45.72" y1="25.4" x2="-50.8" y2="25.4" width="0.1524" layer="91"/>
 </segment>
@@ -16467,7 +16466,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="-5.08" y1="38.1" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="IMU1" gate="G$1" pin="SDA"/>
 <wire x1="-5.08" y1="40.64" x2="0" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SDA"/>
+<pinref part="MPR121" gate="G$1" pin="SDA"/>
 <wire x1="-15.24" y1="-1.27" x2="-10.16" y2="-1.27" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-1.27" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-10.16" y="38.1"/>
@@ -16532,7 +16531,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IMU1" gate="G$1" pin="SCL"/>
 <label x="-78.74" y="35.56" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SCL"/>
+<pinref part="MPR121" gate="G$1" pin="SCL"/>
 <wire x1="-7.62" y1="35.56" x2="0" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="35.56" width="0.1524" layer="91"/>
@@ -16632,7 +16631,7 @@ general purpose rectifier, 1 A</description>
 <junction x="-60.96" y="17.78"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VIN"/>
+<pinref part="MPR121" gate="G$1" pin="VIN"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="13.97" x2="-2.54" y2="13.97" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="13.97" x2="-2.54" y2="19.05" width="0.1524" layer="91"/>
@@ -16791,7 +16790,7 @@ general purpose rectifier, 1 A</description>
 <pinref part="IC1" gate="L298" pin="VS"/>
 <wire x1="-12.7" y1="-53.34" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-7.62" y="-50.8" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="COM"/>
+<pinref part="SLIDE_SW" gate="G$1" pin="COM"/>
 <wire x1="7.62" y1="-44.958" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="7.62" y="-53.34"/>
 </segment>
@@ -16822,7 +16821,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="5.08" y1="-17.78" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="12V_IN" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="-25.4" x2="12.7" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="L1"/>
+<pinref part="SLIDE_SW" gate="G$1" pin="L1"/>
 <wire x1="4.826" y1="-29.21" x2="5.08" y2="-29.21" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-29.21" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="5.08" y="-25.4"/>
