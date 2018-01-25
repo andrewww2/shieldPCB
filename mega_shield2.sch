@@ -3478,7 +3478,6 @@ Source: http://www.osram.convergy.de/</description>
 <pad name="PS1" x="19.05" y="-12.7" drill="1.016" diameter="1.778"/>
 <pad name="INT" x="19.05" y="-15.24" drill="1.016" diameter="1.778"/>
 <pad name="ADR" x="19.05" y="-17.78" drill="1.016" diameter="1.778"/>
-<text x="7.62" y="-25.4" size="1.27" layer="21">BNO055</text>
 <text x="7.62" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="ADA_MPR121">
@@ -16191,7 +16190,7 @@ general purpose rectifier, 1 A</description>
 <part name="GND" library="supply1" deviceset="GND" device=""/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="IMU1" library="arduinoShield" deviceset="BNO055" device=""/>
+<part name="BNO055" library="arduinoShield" deviceset="BNO055" device=""/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
@@ -16262,7 +16261,7 @@ general purpose rectifier, 1 A</description>
 <instance part="GND" gate="1" x="-139.7" y="-45.72" rot="R270"/>
 <instance part="GND37" gate="1" x="-157.48" y="53.34" rot="R180"/>
 <instance part="GND20" gate="1" x="-66.04" y="53.34" rot="MR0"/>
-<instance part="IMU1" gate="G$1" x="0" y="60.96"/>
+<instance part="BNO055" gate="G$1" x="0" y="60.96"/>
 <instance part="R5" gate="G$1" x="-152.4" y="-7.62"/>
 <instance part="R6" gate="G$1" x="-149.86" y="-12.7"/>
 <instance part="R7" gate="G$1" x="-63.5" y="27.94" rot="R90"/>
@@ -16360,7 +16359,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="-137.16" y1="-38.1" x2="-124.46" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IMU1" gate="G$1" pin="GND"/>
+<pinref part="BNO055" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="45.72" x2="0" y2="45.72" width="0.1524" layer="91"/>
@@ -16464,7 +16463,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="-83.82" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="38.1" x2="-5.08" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="38.1" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="IMU1" gate="G$1" pin="SDA"/>
+<pinref part="BNO055" gate="G$1" pin="SDA"/>
 <wire x1="-5.08" y1="40.64" x2="0" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="MPR121" gate="G$1" pin="SDA"/>
 <wire x1="-15.24" y1="-1.27" x2="-10.16" y2="-1.27" width="0.1524" layer="91"/>
@@ -16529,7 +16528,7 @@ general purpose rectifier, 1 A</description>
 </net>
 <net name="MEGASCL" class="0">
 <segment>
-<pinref part="IMU1" gate="G$1" pin="SCL"/>
+<pinref part="BNO055" gate="G$1" pin="SCL"/>
 <label x="-78.74" y="35.56" size="1.778" layer="95"/>
 <pinref part="MPR121" gate="G$1" pin="SCL"/>
 <wire x1="-7.62" y1="35.56" x2="0" y2="35.56" width="0.1524" layer="91"/>
@@ -16598,7 +16597,7 @@ general purpose rectifier, 1 A</description>
 </net>
 <net name="MEGA_5V" class="2">
 <segment>
-<pinref part="IMU1" gate="G$1" pin="VIN"/>
+<pinref part="BNO055" gate="G$1" pin="VIN"/>
 <label x="-43.18" y="55.88" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="55.88" x2="0" y2="55.88" width="0.1524" layer="91"/>
@@ -16864,7 +16863,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="55.88" y1="-121.92" x2="55.88" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MOT4" class="2">
+<net name="MOT4" class="1">
 <segment>
 <pinref part="D8" gate="1" pin="C"/>
 <pinref part="D5" gate="1" pin="A"/>
