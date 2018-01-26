@@ -2295,8 +2295,8 @@ Source: http://www.osram.convergy.de/</description>
 <text x="71.938" y="49.276" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">RX3</text>
 <text x="74.478" y="49.276" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">TX2</text>
 <text x="77.018" y="49.276" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">RX2</text>
-<text x="79.558" y="49.276" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">TX1</text>
-<text x="82.098" y="49.276" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">RX1</text>
+<text x="79.5326" y="52.959" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">TX1</text>
+<text x="81.9456" y="52.9336" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">RX1</text>
 <text x="84.638" y="49.276" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">SDA</text>
 <text x="87.178" y="49.276" size="0.6096" layer="21" font="vector" ratio="12" rot="SR180">SCL</text>
 <text x="33.8201" y="4.6355" size="0.6096" layer="21" font="vector" ratio="12" rot="R180">RES</text>
@@ -16241,6 +16241,16 @@ general purpose rectifier, 1 A</description>
 <part name="JP2" library="adafruit" deviceset="PINHD-1X6" device="" value="MOTOR_2"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="SLIDE_SW" library="arduinoShield" deviceset="E-SWITCH_500SSP1S2M2QEA" device=""/>
+<part name="C5" library="rcl" deviceset="C-US" device="025-050X050" value="0.1 uF"/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="C6" library="rcl" deviceset="C-US" device="025-050X050" value="0.1 uF"/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="C7" library="rcl" deviceset="C-US" device="025-050X050" value="0.1 uF"/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
+<part name="C8" library="rcl" deviceset="C-US" device="025-050X050" value="0.1 uF"/>
+<part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="C9" library="rcl" deviceset="C-US" device="025-050X050" value="0.1 uF"/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16329,6 +16339,16 @@ general purpose rectifier, 1 A</description>
 <instance part="JP2" gate="A" x="48.26" y="-137.16" rot="R180"/>
 <instance part="GND15" gate="1" x="71.12" y="-142.24"/>
 <instance part="SLIDE_SW" gate="G$1" x="1.778" y="-46.482" rot="R90"/>
+<instance part="C5" gate="G$1" x="-48.26" y="17.78" rot="R270"/>
+<instance part="GND16" gate="1" x="-53.34" y="15.24"/>
+<instance part="C6" gate="G$1" x="-48.26" y="10.16" rot="R270"/>
+<instance part="GND17" gate="1" x="-53.34" y="7.62"/>
+<instance part="C7" gate="G$1" x="-48.26" y="2.54" rot="R270"/>
+<instance part="GND18" gate="1" x="-53.34" y="0"/>
+<instance part="C8" gate="G$1" x="-48.26" y="-5.08" rot="R270"/>
+<instance part="GND19" gate="1" x="-53.34" y="-7.62"/>
+<instance part="C9" gate="G$1" x="-48.26" y="-12.7" rot="R270"/>
+<instance part="GND21" gate="1" x="-53.34" y="-15.24"/>
 </instances>
 <busses>
 </busses>
@@ -16454,6 +16474,26 @@ general purpose rectifier, 1 A</description>
 <pinref part="JP2" gate="A" pin="3"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="50.8" y1="-139.7" x2="71.12" y2="-139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="MEGASDA" class="0">
@@ -16885,6 +16925,36 @@ general purpose rectifier, 1 A</description>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="50.8" y1="-142.24" x2="58.42" y2="-142.24" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-142.24" x2="58.42" y2="-121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="MPR121" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="MPR121" gate="G$1" pin="3"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="MPR121" gate="G$1" pin="5"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="MPR121" gate="G$1" pin="7"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="MPR121" gate="G$1" pin="9"/>
+<pinref part="C9" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
