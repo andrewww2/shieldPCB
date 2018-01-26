@@ -3512,9 +3512,9 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="4.06" y1="3.81" x2="4.06" y2="-9.04" width="0.127" layer="21"/>
 <wire x1="4.06" y1="-9.04" x2="-2.54" y2="-9.04" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-9.04" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
-<pad name="COM" x="0.76" y="-2.61" drill="1.85" diameter="3" rot="R180"/>
-<pad name="L1" x="0.76" y="2.09" drill="1.85" diameter="3" rot="R180"/>
-<pad name="L2" x="0.76" y="-7.31" drill="1.85" diameter="3" rot="R180"/>
+<pad name="COM" x="0.76" y="-2.61" drill="1.9" diameter="3" rot="R180"/>
+<pad name="L1" x="0.76" y="2.09" drill="1.9" diameter="3" rot="R180"/>
+<pad name="L2" x="0.76" y="-7.31" drill="1.9" diameter="3" rot="R180"/>
 <text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
@@ -16814,7 +16814,7 @@ general purpose rectifier, 1 A</description>
 <label x="60.96" y="-109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+12V" class="0">
+<net name="+12V" class="1">
 <segment>
 <pinref part="12V_SW" gate="1" pin="+12V"/>
 <wire x1="5.08" y1="-17.78" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
